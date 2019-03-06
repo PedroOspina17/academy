@@ -200,27 +200,32 @@ Software development with Python
 
 #### Python
 
+**Mandatory:**
 1. [Acamica Python Training](https://globant.acamica.com/cursos/485/)
 
-2. https://www.udemy.com/python-programming-beginners/
+**Recommended:**
+1. [Python Advanced] https://globant.acamica.com/cursos/488/
 
-3. https://www.udemy.com/pythonforbeginnersintro/
+**Extra:**
+1. https://www.udemy.com/python-programming-beginners/
 
-4. https://www.udemy.com/python-core-and-advanced/
+2. https://www.udemy.com/pythonforbeginnersintro/
 
-5. https://www.udemy.com/python-from-beginner-to-expert-starter-free/ (1.5h)
+3. https://www.udemy.com/python-core-and-advanced/
 
-6. https://www.udemy.com/python-3-bootcamp/ (6h)
+4. https://www.udemy.com/python-from-beginner-to-expert-starter-free/ (1.5h)
 
-7. https://www.udemy.com/python-3-for-total-beginners/ (6.5h)
+5. https://www.udemy.com/python-3-bootcamp/ (6h)
 
-8. https://www.udemy.com/python-introduction/
+6. https://www.udemy.com/python-3-for-total-beginners/ (6.5h)
 
-9. https://www.udemy.com/learn-python-prgramming-language-from-beginning-to-advanced/ (4h)
+7. https://www.udemy.com/python-introduction/
 
-10. https://www.udemy.com/python-basics-bootcamp/ (45mins)
+8. https://www.udemy.com/learn-python-prgramming-language-from-beginning-to-advanced/ (4h)
 
-11. https://www.udemy.com/learn-python-3-from-scratch-python-for-absolute-beginners/ (2.5h)
+9. https://www.udemy.com/python-basics-bootcamp/ (45mins)
+
+10. https://www.udemy.com/learn-python-3-from-scratch-python-for-absolute-beginners/ (2.5h)
 
 12. https://www.udemy.com/python-101-unlock-programming-skills/ (4.5h)
 
@@ -452,22 +457,32 @@ Commit your practice code.
 # Week 2: Big Data Introduction
 
 ### Motivation ###
+The Apache Hadoop software library is a framework that allows for the distributed processing of large data sets across clusters of computers using simple programming models. It is designed to scale up from single servers to thousands of machines, each offering local computation and storage. It is the foundation of the US$166B Big Data ecosystem (source: IDC) by enabling data applications to run and be managed on large hardware clusters in a distributed computing environment. Besides, it has been at the center of this big data transformation, providing an ecosystem with tools for businesses to store and process data on a scale that was unheard of several years ago.
 
 ### What you will learn ###
 
+- Understand how to analyze problems and drive to solutions using data.
+- The Hadoop main concepts and architecture
+- HDFS Fundamentals
+- Map Reduce Essentials
+
 ### Reading: ###
+
+**Mandatory:**
 
 1. [Intro to Data Analysis](https://www.udacity.com/course/intro-to-data-analysis--ud170)
 
 2. [Intro to Hadoop and MapReduce](https://www.udacity.com/course/intro-to-hadoop-and-mapreduce--ud617)
 
-3. [Introduction to Apache Hadoop](https://www.edx.org/course/introduction-apache-hadoop-linuxfoundationx-lfs103x)
+**Extra:**
 
-4. [Big data and Hadoop framework](https://www.udemy.com/big-data-and-hadoop-framework/)
+1. [Introduction to Apache Hadoop](https://www.edx.org/course/introduction-apache-hadoop-linuxfoundationx-lfs103x)
 
-5. [Big Data and Hadoop Essentials](https://www.udemy.com/big-data-and-hadoop-essentials-free-tutorial/)
+2. [Big data and Hadoop framework](https://www.udemy.com/big-data-and-hadoop-framework/)
 
-6. [Hadoop Basic Course for Beginners to Professionals](https://www.udemy.com/hadoop-basic-course-for-beginners-to-professionals/)
+3. [Big Data and Hadoop Essentials](https://www.udemy.com/big-data-and-hadoop-essentials-free-tutorial/)
+
+4. [Hadoop Basic Course for Beginners to Professionals](https://www.udemy.com/hadoop-basic-course-for-beginners-to-professionals/)
 
 ### Practice: ###
 
@@ -565,14 +580,27 @@ Commit your practice code.
 # Week 3: Spark
 
 ### Motivation ###
+Apache Spark is an open-source distributed general-purpose cluster-computing framework. Spark was developed in 2012 in response to limitations in the MapReduce cluster computing paradigm, which forces a particular linear dataflow structure on distributed programs. Spark had in excess of 1000 contributors in 2015, making it one of the most active projects in the Apache Software Foundation and one of the most active open source big data projects.
+Right now, Apache Spark is used in the majority of our Data projects so it's crucial for our Data Architects to be proficient with it.
 
 ### What you will learn ###
 
+You will learn the main concepts, architecture and basics. Besides, you will be able to run your fist Spark program.
+
 ### Reading: ###
+
+**Mandatory:**
+
+1. [Acamica Spark Training]: (https://globant.acamica.com/cursos/209/)
+_Some videos are missed, however, you can follow the course without problems_
+
+**Extra:**
 
 1. [Spark Basics](https://www.udemy.com/spark-basics/)
 
 2. [Spark Starter Kit](https://www.udemy.com/sparkstarterkit/)
+
+3. [Apache Spark Tutorial](https://www.datacamp.com/community/tutorials/apache-spark-python)
 
 ### Practice: ###
 
