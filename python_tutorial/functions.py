@@ -1,6 +1,13 @@
 def returningVoidValue(): #in python None is a null value
     pass ## to return None
 
+def test_VoidValueVAlidation(): 
+    ''' To define a test case use "test_" at the begining or "_test" at the end of the method name. 
+        To execute them you should use the command pytest -q functions.py (or the class name that you want to test.)
+    '''
+    assert returningVoidValue() == None
+
+
 print(returningVoidValue())
 
 def optionalParams(a,b,c=10):
@@ -14,9 +21,15 @@ def welcome():
     """
     print("Welcome to working with functions")
 
-def multpl_values():
+def multpl_values(): # function that returns a tuple of numbers. you can receive it as a tuple or in a different variables.
     return 1,2,3
 
+def test_multplValuesValidation(): 
+    assert multpl_values() == (1,2,3)
+
+    
+# def test_multplValuesValidation_error(): an error execution test  will be raised due to the extra number added in the tuple that will be compared
+#     assert multpl_values() == (1,2,3,4)
 
 welcome()
 result_in_tuple = multpl_values()
