@@ -6,6 +6,10 @@ class Matrix(object):
         self.numColumns = len(data[0])
         self.data = data
 
+    @staticmethod
+    def convertSetToList(data):
+        return [list(item) for item in data]
+
     def clone(self):
         return Matrix(self.data)
 
@@ -127,7 +131,16 @@ class Matrix(object):
                 resultRow.append(det)
             result.append(resultRow)
         return Matrix(result)
-        
+    
+    def getRows(self, desiredRowIndex):
+        return Matrix.convertSetToList({tuple(item) for i,item in enumerate(self.data) if i in desiredRowIndex})
+    
+    def getColumns(self, desiredColumnIndex):
+        temp = self.transpose()
+        return temp.getRows(desiredColumnIndex)
+    
+
+    
 #########################################################
 
 import pytest
@@ -187,6 +200,20 @@ matrix8.adjugate().show()
 print ("---- inverse ----")
 matrix8.invert().show()
 
+print ("---- get specific rows and columns ----")
+matrix9 = Matrix([[92,33,34,6],[2,3,6,7],[21,82,0,3],[2,23,1,1],[25,232,21,41],[52,263,18,16],[82,2003,16,1443],[2,203,1,13]])
+matrix9.show()
+print("getting 2nd 4th 6th and 7th rows")
+print(matrix9.getRows([1,3,5,6]))
+print("getting 2nd and 3rd column")
+print(matrix9.getColumns([1,2]))
+print("getting 2nd, 3rd and 4th repeated rows and  1st, 3rd columns")
+matrix10 = Matrix([[92,33,34,33,6],[92,33,34,33,6],[92,33,34,33,6],[92,33,34,33,6],[92,33,34,33,6],[92,33,34,33,6]])
+matrix10.show()
+print(matrix10.getRows([2,3,4]))
+print(matrix10.getColumns([0,1,3]))
+
+
 def test_add():
     matrix = Matrix([[1,2,3],[4,5,6],[7,8,9]])
     matrix2 = Matrix([[1,1,1],[2,2,2],[3,3,3]])
@@ -197,7 +224,6 @@ def test_add_type_validation_someType():
     with pytest.raises(Exception):
         matrix = Matrix([[1,2,3],[4,5,6],[7,8,9]])
         matrix.add(5)
-
         
 def test_add_type_validation_arrayType():
     with pytest.raises(Exception):
@@ -268,3 +294,17 @@ def test_nonInvertable_validation():
     with pytest.raises(Exception):
         matrix9.invert()
 
+def test_getRows():
+    matrix9 = Matrix([[92,33,34,6],[2,3,6,7],[21,82,0,3],[2,23,1,1],[25,232,21,41],[52,263,18,16],[82,2003,16,1443],[2,203,1,13]])
+    assert matrix9.getRows([1,3,5,6]) == [[82, 2003, 16, 1443], [2, 23, 1, 1], [2, 3, 6, 7], [52, 263, 18, 16]]
+
+def test_getColumns():
+    matrix9 = Matrix([[92,33,34,6],[2,3,6,7],[21,82,0,3],[2,23,1,1],[25,232,21,41],[52,263,18,16],[82,2003,16,1443],[2,203,1,13]])
+    assert matrix9.getColumns([1,2]) == [[33, 3, 82, 23, 232, 263, 2003, 203], [34, 6, 0, 1, 21, 18, 16, 1]]
+
+def test_getRepeatedRows():
+    matrix10 = Matrix([[92,33,34,33,6],[92,33,34,33,6],[92,33,34,33,6],[92,33,34,33,6],[92,33,34,33,6],[92,33,34,33,6]])    
+    assert matrix10.getRows([2,3,4]) == [[92,33,34,33,6]]
+def test_getRepeatedColumns():
+    matrix10 = Matrix([[92,33,34,33,6],[92,33,34,33,6],[92,33,34,33,6],[92,33,34,33,6],[92,33,34,33,6],[92,33,34,33,6]])
+    assert matrix10.getColumns([0,1,3]) == [[92, 92, 92, 92, 92, 92], [33, 33, 33, 33, 33, 33]]
