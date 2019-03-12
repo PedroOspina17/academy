@@ -1,0 +1,89 @@
+1. Linux: What is the difference between a partition and a filesystem? 
+Partition is the physical slice of hard disk and filesystem is how the files are organized. 
+
+2. What is the relationship between Linux Kernel and Linux Distros?
+Linux kernel is the core or base of linux, so Linux distro is based on a linux kernel.
+
+3. What are the two levels on which the package managers operate on Linux? 
+Low level and hihg level
+
+4. How would you go about researching a new feature on Linux? How are the different sources of documentation used?
+
+5. What are the different types of processes? How do you manage them?
+Init process. First process run by the linux kernel
+Zombie process. When the parent process does not execute wait() immediatly after the child terminates
+Orphan process. When the process Parent dies or terminates before the child
+Daemon process. background process
+
+6. Explain the concepts of partitions, mount points, NFS and pseudo filesystems
+Partition is the physical slice of hard disk.
+A mount point is the root directory of the newly added filesystem
+NFS is the way to mount a file system in the network
+pseudo-filesystem are not real files, those usually contains running information and could be used for configuration proposes
+
+7. How does a Network work? What are the different types of addresses? What is the function of the DNS? What happens when you send a file using FTP?
+Network work through the intercomunication of cumputers sharing data. 
+Logical Address or IP address is used at the IP layer which is used to identify the end points - source and destination.
+
+MAC address or physical address is used at the Data link layer to identify hops and end-points en-route from source to destination.
+DNS change from the readable name of computers to their IP address as well as in the opposite direction
+Logical Address or IP address is used at the IP layer which is used to identify the end points - source and destination.
+MAC address or physical address is used at the Data link layer to identify hops and end-points en-route from source to destination.
+
+8. How do you use routines on bash scripts? Why would you use bash scripting?
+Creating functions. scripting can be used to do repetitive activities, monitoring and log actions as well. 
+
+9. What steps should you take to make Linux as secure as possible? What is process isolation, and how do you achieve it? How can you secure the boot process?
+
+10. What does it that Python is: Interpreted, Dynamic typing, Extensive, Object Oriented
+interpreted
+
+11. Python Data Structures and characteristics? Differences and similarities between dictionary, map, set, lists and tuples
+List: structure to have several items and allow to iterate them
+Dictionary: is a structure composed of keys and values. 
+Set: is like a list but doesn´t allow duplicates.
+Map: is a function to go through an iterable element.
+Tuple: Structure that doesn't allow value changes
+
+12. What are Lambda Expressions? What are Nested statements? How can you create and use each of them? Why would you?
+Lambda expressions are functions without names, anonymous. 
+A nested statement is a statement which are inswithin another statement
+
+13. Explain the concept of Inheritance. How does it work?
+When you have an existing object, and you what to create another one similar, probably with extra methods. you can create the new class, inherit the first one and in that new class create the new methods. so when you are going to use the new object you can use the new methods as well as the base class.
+
+14. Explain the concept of Polymorphism. How does it work?
+When you want to create an object, that may have different behavior depends on the situation, you can create a base class and two different specific class, overriding the base behavior or implementing it and in execution time create the object that you need and it will have different behavior. in other words, is the way to create different behavior to the same object. 
+
+15. What are errors and exceptions in python? How can you handle them?
+Error:
+Exception: is an error in execution time.
+To handle them you can use try-except
+
+16. Explain all the built-in functions you can remember
+format: map arguments from string text, denoted with "{}" and give a format to them.
+hasattr: verify if an object has an attribute specified
+isinstance: verify if a variable is a specific type. 
+Map: is a function to go through an iterable element.
+Max: return the biggest element
+Min: return the lowest element
+open: open a file to read or write on it, if the file doesn't exist open create it.
+print: show information in the console.
+tuple: create a tuple based on another element 
+list: create a list based on another element
+set: create a set based on another element
+
+
+17. What are decorators in python? Why would you use them, and how?
+you can use decorators in order to change the method is used for. you just have to att @ and the decorator name before of the method definition. I.e: @staticmethod and
+ @classmethod
+
+18. What is the difference between generators and iterators? How can you create and consume a generator?
+a generator is a method that has at least one yield return. the result is given one by one, like lazy loading.
+the iterator is a class that implements the __iter__ and __next__ methods in order to allow to go through the element one by one.
+
+19. What are python coding conventions? How would you go about creating a python project from scratch? How would you structure it?
+
+20. What are the different ways of debugging your python project? Why and how would you use each of them?
+in order to debug you can execute the .py file from the system console, using the "py -i <.py file path>" command.
+you can debug your app using visual studio code, adding a breakpoint and then pressing "F5" button.

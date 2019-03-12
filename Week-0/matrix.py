@@ -9,7 +9,7 @@ class Matrix(object):
     @staticmethod
     def convertSetToList(data):
         return [list(item) for item in data]
-
+        
     def clone(self):
         return Matrix(self.data)
 
@@ -138,6 +138,9 @@ class Matrix(object):
     def getColumns(self, desiredColumnIndex):
         temp = self.transpose()
         return temp.getRows(desiredColumnIndex)
+
+    def getPart(self, rowIndexFrom, rowIndexTo,columnIndexFrom, columnIndexTo):
+        return [[column for j, column in enumerate(row) if j >= columnIndexFrom and j <= columnIndexTo] for i, row in enumerate(self.data) if (i >= rowIndexFrom and i <= rowIndexTo)]
     
 
     
@@ -212,7 +215,10 @@ matrix10 = Matrix([[92,33,34,33,6],[92,33,34,33,6],[92,33,34,33,6],[92,33,34,33,
 matrix10.show()
 print(matrix10.getRows([2,3,4]))
 print(matrix10.getColumns([0,1,3]))
-
+print("getting a 10x2 from column 5 part from a 10x10 matrix")
+matrix11 = Matrix([[932,353,334,313,66,932,353,334,313,66],[9,3,34,33,6,932,353,3,3,6],[2,3,63,364,363,66,94,3,6,9],[92,33,34,33,6,932,353,334,313,66],[952,353,354,353,652,353,334,313,6,0],[962,363,364,363,66,9,3,3,3,6],[2,3,63,364,363,66,94,3,6,9],[9,36,34,31,6,90,24,4,3,46],[92,350,3504,303,6502,350,3034,3103,60,00],[9621,3631,3641,3631,661,91,31,31,31,61]])
+matrix11.show()
+Matrix(matrix11.getPart(0,10,4,5)).show()
 
 def test_add():
     matrix = Matrix([[1,2,3],[4,5,6],[7,8,9]])
@@ -308,3 +314,7 @@ def test_getRepeatedRows():
 def test_getRepeatedColumns():
     matrix10 = Matrix([[92,33,34,33,6],[92,33,34,33,6],[92,33,34,33,6],[92,33,34,33,6],[92,33,34,33,6],[92,33,34,33,6]])
     assert matrix10.getColumns([0,1,3]) == [[92, 92, 92, 92, 92, 92], [33, 33, 33, 33, 33, 33]]
+def test_get10X2Part():
+    matrix11 = Matrix([[932,353,334,313,66,932,353,334,313,66],[9,3,34,33,6,932,353,3,3,6],[2,3,63,364,363,66,94,3,6,9],[92,33,34,33,6,932,353,334,313,66],[952,353,354,353,652,353,334,313,6,0],[962,363,364,363,66,9,3,3,3,6],[2,3,63,364,363,66,94,3,6,9],[9,36,34,31,6,90,24,4,3,46],[92,350,3504,303,6502,350,3034,3103,60,00],[9621,3631,3641,3631,661,91,31,31,31,61]])
+    result = Matrix(matrix11.getPart(0,10,4,5))
+    assert result.numRows == 10 and result.numColumns == 2
