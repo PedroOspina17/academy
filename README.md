@@ -362,6 +362,8 @@ To begin with, we can classify data models in two big groups: relational and NoS
 
 3. [NoSQL Fundamentals Guide](https://docs.google.com/document/d/1d8DYf6F9p74Cm5hvPwo6njdGazu01y4sqZG1mmIxLWY/edit)
 
+4. [Data models choice](reading/data_models_choice.pptx)
+
 → [index](#index)
 
 ### Practice: ###
