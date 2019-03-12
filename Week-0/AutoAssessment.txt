@@ -36,7 +36,10 @@ Creating functions. scripting can be used to do repetitive activities, monitorin
 9. What steps should you take to make Linux as secure as possible? What is process isolation, and how do you achieve it? How can you secure the boot process?
 
 10. What does it that Python is: Interpreted, Dynamic typing, Extensive, Object Oriented
-interpreted
+interpreted due to when the python program is run Python reads the .py into memory, and parses it in order to get the binary
+dynamically because of the datatype objects in python are not defined, python recognizes the type based on the data stored on the variable.
+python is Extensible because it encourages the package creation, so you can create new utilities that you can reuse or you can get packages created by others. 
+And its object-oriented due to everything in python is an object
 
 11. Python Data Structures and characteristics? Differences and similarities between dictionary, map, set, lists and tuples
 List: structure to have several items and allow to iterate them
