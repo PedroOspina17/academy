@@ -1,0 +1,1 @@
+mongo "mongodb+srv://cluster0-ouk18.mongodb.net/test"     --username sa

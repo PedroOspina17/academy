@@ -1,0 +1,147 @@
+Auto assessment:
+1. What is a DBMS and what are its responsibilities? What are the DBMS components?
+database management sistem (DBMS) it's a software responsible of create and manage databases and their information (Interface). 
+Components: 
+Software, Data, Procedures, Database languages,Query processor, Runtime database manager, Database engine, Reporting.
+
+
+2. What are the architectural levels? How are they related to each other?
+Physical level: describes how data is actually stored in the database
+Conceptual level: describes how the database appears to the users conceptually and the relationships between various data tables
+External level: shows the relevant database content to the users in the form of views and hides the rest of the data
+
+
+3. What are the characteristics of a OLAP system? What is the difference with OLTP?
+OLAP (On-line Analytical Processing): 
+- deals with Historical Data or Archival Data. 
+- low volume of transactions. 
+- Queries are often very complex and involve aggregations. 
+OLAP is a analisis purposes, and OLTP is for transaccional purposes. 
+
+
+4. What is ACID? Explain each concept of the acronym
+Atomicity: Every transaction is a single unit. Success or fail completely.
+Consistency: The database pass from an a valid state to another valid state. 
+Isolation: An incomplete transaction cannot be visible to the others.
+Durability: It guarantee that once the transaction have been commited the information will be saved, even if the system fails.  
+
+
+
+5. Explain what is a data model, and what are the different structures, constraints and operations.
+is the way to irganize the information an show how the data is related. 
+Structures: 
+-Flat model
+-Hierarchical
+- Network
+-Relational
+-Object-relational
+
+
+6. What is normalization, and what each level requires? Why would you normalize a table? How do you do it?
+Apply the rules in order to make a efficient database model, less redundant.
+There is some kind of rules that the model should follow.
+
+7. What is the difference between relational and non relational databases? Why would you chose each?
+Relational databases use a estructural modeling, which has a lot of restrictions in order to guarantee the consistency, the non relational database allow different kind of structure, eve if it is the same entity.
+
+8. What are the different types of databases?
+- Centralized.
+- distribute
+-Graph
+-Relational
+-Operational
+-Column-Oriented
+-Key-Value
+
+
+
+9. What does the CAP Theorem state? What are the tradeoffs one needs to do when selecting a database?
+ a distributed database system can only have 2 of the 3: Consistency, Availability and Partition Tolerance
+CA (consistent and highly available, but not partition-tolerant)
+CP (consistent and partition-tolerant, but not highly available)
+AP (highly available and partition-tolerant, but not consistent) 
+
+10. What are the Consistency levels?
+The limit of the consistency that i'm goint to accept. 
+
+11. Explain Sharding, Clustering and Partitions
+Sharding: Take a part of the database. 
+Clustering: is the process of combining more than one servers or instances connecting a single database.
+Partitions: Divide a one disk drive in a virtual parts.
+
+12. What does failover mean? What are some failover techniques?
+Is the way of the database works when a fail happens. 
+Replace the primary cluster, if it is not available, to a secundary available.
+
+13. How do Key-Value stores work? What are the benefits? What are the weaknesses? What are some of the common features?
+Use asosiative array, the values are identified with a key.
+Benefits:
+-Simple data format makes write and read operations fast
+-Value can be anything, including JSON, flexible schemas
+Weaknesses:
+-Not optimized for lookup. 
+-Lookup requires scanning the whole collection or creating separate index values
+Features:
+-Data partitioning
+-Accessing data on partitions
+-Fast read capabilities
+-Data versioning
+
+14. How do Documental stores work? What are the benefits? What are the weaknesses? What are some of the common features?
+it is a flexible schema, the database doesn't need to know the structure of the information. 
+Features: 
+- Suport unstructured documents 
+- Partial updates are allowed
+- Use Json to storage the information, which is one of the most used format in web applications.
+- Large volumes of structured, semi-structured, and unstructured data
+- Efficient, scale-out architecture instead of expensive, monolithic architecture
+
+weaknesses:
+-Joins are not supported
+-Data Consistency
+- Lack of Standardization
+
+
+15. How do Columnar stores work? What are the benefits? What are the weaknesses? What are some of the common features?
+
+Stores de data in columns rather than in arows as relational DBMS
+Benefits:
+-Efficiently write and read data 
+-speed up the time it takes to return a query
+-Allow grouping easily
+-reduce the amount of data retreived from disk
+-scale out easily
+
+weaknesses:
+-Joins are not supported
+- takes a very long time to insert individual records into a table and even longer for updates
+
+
+Features:
+-OLAP is well worked
+-Scale Out
+-Compression
+-Flexible schema
+
+
+16. How do Graph stores work? What are the benefits? What are the weaknesses? What are some of the common features?
+To manage conected structures, connected data and show that relationship. 
+Benefits:
+-Can map relationships easily 
+-is built for the use of transactional systems
+-doesn't have a rigid schema
+-The structure is very simple
+-Allow dynamic requirements
+
+weaknesses:
+-they are not good at handling queries that span the entire database
+-you have to store all the data on one server
+-can't scale out
+-are not optimized for large-volume analytics 
+
+17. What are the common architectural components and functions of the different data store types?
+
+Cluster
+Node
+Tables
+Partition
