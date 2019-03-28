@@ -1,0 +1,5 @@
+1) What command would you use to count the amount of occurrences of the word ?Unix ?in a file? How would make the command case insensitive?
+R: grep -o Unix "file" | wc -w
+R Case insensitive: grep -oi Unix "file" | wc -w
+2) What command would you use to constantly see the last 100 lines appended to a file that contain the word *"ERROR"*??
+R: tail -n 100 -f "Pedro\Academy\da-academy\Week-0\matrix.py" | grep -e "*\"ERROR\"*"
