@@ -17,7 +17,7 @@ exercises.
 ## DA Academy
 
 ### Are you ready for it?
-  
+
 ### Index
 
 1. [Objective](#objective)
@@ -108,7 +108,7 @@ technical assistance. Communications will take place over [Globant Slack](https:
 
 6. Fork this repo https://github.corp.globant.com/big-data-studio/da-academy to use as a base to host the project code. Read [this](https://help.github.com/articles/fork-a-repo/) for instructions.
 
-→ [index](#index) 
+→ [index](#index)
 
 
 ### General Guidelines
@@ -134,11 +134,11 @@ Developers that move faster than average can go ahead and complete as much exerc
 
 ### Sign Up
 
-The Academy will be filled up on a *first-come, first-serve* basis. 
+The Academy will be filled up on a *first-come, first-serve* basis.
 
-Applicants may be placed on a waiting list and notified of acceptance when space becomes available on future iterations of the training, which will be held on a monthly basis. 
+Applicants may be placed on a waiting list and notified of acceptance when space becomes available on future iterations of the training, which will be held on a monthly basis.
 
-Accepted students will have access to premium udemy courses on the program study track, support from Globant's subject experts, weekly check-up meetings, code-reviews of the practices, and a final evaluation which will be stored on Globant profile's files. 
+Accepted students will have access to premium udemy courses on the program study track, support from Globant's subject experts, weekly check-up meetings, code-reviews of the practices, and a final evaluation which will be stored on Globant profile's files.
 
 *If you are waiting for your acceptance email, you can start with the free-part of the training course.*
 
@@ -168,7 +168,7 @@ You will commit all your code on a daily basis, when you finish your practice.
 
 ### Individual performance ###
 
-After each lecture, you will be given several related exercices which act like a bonus. 
+After each lecture, you will be given several related exercices which act like a bonus.
 
 General requirements:
 
@@ -196,7 +196,7 @@ DA needs to be ready to code. Python is the best programming language to start. 
 
 Software development with Python
 
-### Reading: ###
+### Courses: ###
 
 #### Python
 
@@ -204,41 +204,37 @@ Software development with Python
 1. [Acamica Python Training](https://globant.acamica.com/cursos/485/)
 
 **Recommended:**
-1. [Python Advanced] https://globant.acamica.com/cursos/488/
+2. [Python Advanced](https://globant.acamica.com/cursos/488/)
 
 **Extra:**
-1. https://www.udemy.com/python-programming-beginners/
+3. [Programming with Python: Hands-On Introduction for Beginners](https://www.udemy.com/python-programming-beginners/) (3.5h)
 
-2. https://www.udemy.com/pythonforbeginnersintro/
+4. [Introduction To Python Programming](https://www.udemy.com/pythonforbeginnersintro/) (4.5h)
 
-3. https://www.udemy.com/python-core-and-advanced/
+5. [Python Core and Advanced](https://www.udemy.com/python-core-and-advanced/) (8h)
 
-4. https://www.udemy.com/python-from-beginner-to-expert-starter-free/ (1.5h)
+6. [Python from Beginner to Intermediate in 30 min.](https://www.udemy.com/python-from-beginner-to-expert-starter-free/) (1.5h)
 
-5. https://www.udemy.com/python-3-bootcamp/ (6h)
+7. [Learn Python 3.6 for Total Beginners](https://www.udemy.com/python-3-for-total-beginners/) (6.5h)
 
-6. https://www.udemy.com/python-3-for-total-beginners/ (6.5h)
+8. [Python Basics - Bootcamp](https://www.udemy.com/python-basics-bootcamp/) (45m)
 
-7. https://www.udemy.com/python-introduction/
+9. [Learn Python 3 From Scratch | Python for Absolute Beginners](https://www.udemy.com/learn-python-3-from-scratch-python-for-absolute-beginners/) (2.5h)
 
-8. https://www.udemy.com/learn-python-prgramming-language-from-beginning-to-advanced/ (4h)
-
-9. https://www.udemy.com/python-basics-bootcamp/ (45mins)
-
-10. https://www.udemy.com/learn-python-3-from-scratch-python-for-absolute-beginners/ (2.5h)
-
-12. https://www.udemy.com/python-101-unlock-programming-skills/ (4.5h)
+10. [Python 101: Unlock Programm Skills - From Novice to Expert](https://www.udemy.com/python-101-unlock-programming-skills/) (4.5h)
 
 
 #### Linux
 
-13. [Introduction to Linux](https://www.edx.org/course/introduction-to-linux)
+**Mandatory:**
+1. [Introduction to Linux](https://www.edx.org/course/introduction-to-linux)
+- Mandatory Chapters: 3, 7, 8, 9, 10, 11, 12, 14, 16, 18
+- All other chapters are recommended but not obligatory
 
-14. https://www.udemy.com/linux-fundamentals-for-it-professionals/
+**Extra:**
+2. [Linux Fundamentals for IT Professionals](https://www.udemy.com/linux-fundamentals-for-it-professionals/) (8h)
 
-15. https://www.udemy.com/linux-command-line-tutorial-for-beginners/
-
-16. https://www.udemy.com/linux-shell-scripting-free/
+3. [Intro to Linux Shell Scripting](https://www.udemy.com/linux-shell-scripting-free/) (42m)
 
 
 → [index](#index)
@@ -250,7 +246,7 @@ Software development with Python
 
 1. **Fork** this repository.
 2. Clone your fork.
-3. Initialize a simple project in your local repository. 
+3. Initialize a simple project in your local repository.
 4. Update *.gitignore* file, not to upload */target* folder nor any undesirable and unneeded file.
 5. Upload your code with whatever changes you've made. You will upload your individual progress in your master branch. You can also create additional branches for testing/other purposes. Corrections will be only made against your master branch.
 6. Every practice functionality must be validated through unit tests. Use the [pytest package](https://pytest.readthedocs.io/en/latest/getting-started.html) to make these tests.
@@ -267,7 +263,7 @@ Software development with Python
 Create a class which allows to represent a matrix of any order or shape (n x n, n x m). It should also allow the following operations with matrices:
 
 - Matrices addition
-- Scalar multiplication 
+- Scalar multiplication
 - Matrices multiplication
 - Matrix transpose
 - Matrix determinant
@@ -354,11 +350,14 @@ Chosing the most appropriate data model for your project is not trivial. As a DA
 
 To begin with, we can classify data models in two big groups: relational and NoSQL databases. Here you will learn the fundamentals of each, with some specific implementations details.
 
-### Reading: ###
+### Courses: ###
 
 1. [Intro to Relational Databases](https://www.udacity.com/course/intro-to-relational-databases--ud197)
+- Mandatory modules: Elements of SQL, Python DB API, Deeper into SQL
 
 2. [NoSQL - Acamica](https://globant.acamica.com/cursos/412/)
+
+### Reading: ###
 
 3. [NoSQL Fundamentals Guide](https://docs.google.com/document/d/1d8DYf6F9p74Cm5hvPwo6njdGazu01y4sqZG1mmIxLWY/edit)
 
@@ -370,7 +369,7 @@ To begin with, we can classify data models in two big groups: relational and NoS
 
 1. Create your project DB with whichever SQL db you prefer. From now on, data should be retrieved from/persisted in/deleted from there.
 2. Create a database named 'high-school' and modelate:
- 
+
    - Student: first name, last name, registration number, date of birth
    - Teacher: first name, last name, date of birth
    - Course: name, assigned teacher, hours by week, schedule time (they can be dictated several times during the week)
@@ -407,7 +406,7 @@ To begin with, we can classify data models in two big groups: relational and NoS
 
 #### Exercices ####
 
-1. Exercies from [Udacity](https://www.udacity.com/course/intro-to-relational-databases--ud197) 
+1. Exercies from [Udacity](https://www.udacity.com/course/intro-to-relational-databases--ud197)
 
 2. Quiz - Acamica
 
@@ -468,23 +467,24 @@ The Apache Hadoop software library is a framework that allows for the distribute
 - HDFS Fundamentals
 - Map Reduce Essentials
 
-### Reading: ###
+### Courses: ###
 
 **Mandatory:**
 
 1. [Intro to Data Analysis](https://www.udacity.com/course/intro-to-data-analysis--ud170)
+- Mandatory Lession 1: Data Analysis Process
 
 2. [Intro to Hadoop and MapReduce](https://www.udacity.com/course/intro-to-hadoop-and-mapreduce--ud617)
+- Mandatory modules: Big Data, HDFS and MapReduce, Problem Set Lesson 2 & Lesson 4
 
 **Extra:**
 
-1. [Introduction to Apache Hadoop](https://www.edx.org/course/introduction-apache-hadoop-linuxfoundationx-lfs103x)
+4. [Introduction to Apache Hadoop](https://www.edx.org/course/introduction-apache-hadoop-linuxfoundationx-lfs103x)
+- Recommended Chapters: 2, 3
 
-2. [Big data and Hadoop framework](https://www.udemy.com/big-data-and-hadoop-framework/)
+5. [Big Data and Hadoop Essentials](https://www.udemy.com/big-data-and-hadoop-essentials-free-tutorial/) (45mins)
 
-3. [Big Data and Hadoop Essentials](https://www.udemy.com/big-data-and-hadoop-essentials-free-tutorial/)
-
-4. [Hadoop Basic Course for Beginners to Professionals](https://www.udemy.com/hadoop-basic-course-for-beginners-to-professionals/)
+6. [Hadoop Basic Course for Beginners to Professionals](https://www.udemy.com/hadoop-basic-course-for-beginners-to-professionals/) (2.5h)
 
 ### Practice: ###
 
@@ -495,7 +495,7 @@ The Apache Hadoop software library is a framework that allows for the distribute
 
 1. ETL: Movies data processing
 
-Process the 5000 films data file extracted from IMDB and answer the questions below. Show obtained results in a simple HTML document. Additionaly, add the time that takes to process the data to achieve requirements. 
+Process the 5000 films data file extracted from IMDB and answer the questions below. Show obtained results in a simple HTML document. Additionaly, add the time that takes to process the data to achieve requirements.
 
 - ¿How many "colour" films and how many "black and white" films are there in the list?
 - ¿How many films did each director produce?
@@ -589,20 +589,22 @@ Right now, Apache Spark is used in the majority of our Data projects so it's cru
 
 You will learn the main concepts, architecture and basics. Besides, you will be able to run your fist Spark program.
 
-### Reading: ###
+### Courses: ###
 
 **Mandatory:**
 
-1. [Acamica Spark Training]: (https://globant.acamica.com/cursos/209/)
-_Some videos are missed, however, you can follow the course without problems_
+1. [Acamica Spark Training](https://globant.acamica.com/cursos/209/)
+- Some videos are missed, however, you can follow the course without problems_
 
 **Extra:**
 
-1. [Spark Basics](https://www.udemy.com/spark-basics/)
+2. [Spark Basics](https://www.udemy.com/spark-basics/) (8h)
 
-2. [Spark Starter Kit](https://www.udemy.com/sparkstarterkit/)
+3. [Spark Starter Kit](https://www.udemy.com/sparkstarterkit/) (3.5h)
 
-3. [Apache Spark Tutorial](https://www.datacamp.com/community/tutorials/apache-spark-python)
+**Reading:**
+
+4. [Apache Spark Tutorial](https://www.datacamp.com/community/tutorials/apache-spark-python)
 
 ### Practice: ###
 
@@ -638,7 +640,7 @@ Suggested reading:
 https://github.com/dataquestio/twitter-scrape/blob/master/scraper.py
 https://www.dataquest.io/blog/streaming-data-python/
 
-3. **Challenge!**: 
+3. **Challenge!**:
 
 - What do people think about Sandra Bullock's *"Bird Box"*? Make a sentiment analysis using Twitter information. [Help](https://medium.com/@anicolaspp/spark-streaming-and-twitter-sentiment-analysis-c860938d484).
 
@@ -697,11 +699,11 @@ private def mapDateTime2Date(v: (LocalDateTime, Long)): (LocalDate, Long) = {
 
 The term *“cloud”* has been used in many different contexts and it has many different definitions, so it makes sense to define the term at least for this course.
 
-Cloud is a collection of services that helps developers focus on their project rather than on the infrastructure that powers it. 
+Cloud is a collection of services that helps developers focus on their project rather than on the infrastructure that powers it.
 
 In more concrete terms, cloud services are things like Amazon Elastic Compute Cloud (EC2) or Google Compute Engine (GCE), which provide APIs to provision virtual servers, where customers pay per hour for the use of these servers.
 
-In many ways, cloud is the next layer of abstraction in computer infrastructure, where computing, storage, analytics, networking, and more are all pushed higher up the computing stack. This structure takes the focus of the developer away from CPUs and RAM and toward APIs for higher-level operations such as storing or querying for data. 
+In many ways, cloud is the next layer of abstraction in computer infrastructure, where computing, storage, analytics, networking, and more are all pushed higher up the computing stack. This structure takes the focus of the developer away from CPUs and RAM and toward APIs for higher-level operations such as storing or querying for data.
 Cloud services aim to solve your problem, not give you low-level tools for you to do so on your own. Further, cloud services are extremely flexible, with most requiring no provisioning or long-term contracts. Due to this, relying on these services allows you to scale up and down with no advanced notice or provisioning, while paying only for the resources you use in a given month.
 
 There are many cloud providers out there, including Google, Amazon, Microsoft, Rackspace, DigitalOcean, and more. With so many competitors in the space, each of these companies must have its own take on how to best serve customers. It turns out that although each provides many similar products, the implementation and details of how these products work tends to vary quite a bit.
@@ -712,17 +714,18 @@ In this course, we will focus on AWS and GCP.
 
 In this section, you will learn some of the basics of AWS and GCP, being able to fully understand, deploy and configure different components in the cloud.
 
-### Reading: ###
+### Courses: ###
 
-1. [AWS Certified Cloud Practitioner 2019](https://www.udemy.com/aws-certified-cloud-practitioner/https://aws.amazon.com/training/course-descriptions/cloud-practitioner-essentials/)
+1. [AWS Cloud Practitioner Essentials](https://aws.amazon.com/training/course-descriptions/cloud-practitioner-essentials/)
 
-2. [AWS Cloud Practitioner Essentials](https://aws.amazon.com/training/course-descriptions/cloud-practitioner-essentials/)
+**Mandatory:**
+2. [AWS Cloud Practitioner Essentials: **Core Services**](https://www.aws.training/learningobject/wbc?id=16332)
 
-3. [AWS Cloud Practitioner Essentials: Core Services](https://www.aws.training/learningobject/wbc?id=16332)
+3. [AWS Cloud Practitioner Essentials: **Architecting**](https://www.aws.training/learningobject/wbc?id=16332)
 
-4. [AWS Cloud Practitioner Essentials: Architecting](https://www.aws.training/learningobject/wbc?id=16332)
+**Extra:**
 
-5. [Learn GCP: Google Cloud Data Engineer Express Course!](https://globant.udemy.com/organization-manage/insight/1510852/)
+4. [GCP - Google Cloud Platform Concepts](https://www.udemy.com/gcp-google-cloud-platform-concepts/) (6.5)
 
 → [index](#index)
 
@@ -753,7 +756,7 @@ You can always review your spend and Free tier Usage, choosing from the account 
 
 ##### Free Tier #####
 
-AWS free tier includes more than 60 products which you can easily start using. 
+AWS free tier includes more than 60 products which you can easily start using.
 
 ##### Usage #####
 
@@ -768,9 +771,9 @@ Try to always use the same AWS region, such as us-east-1.*
 
 ##### Lambda #####
 
-1) Create a Lambda function called da-training-gateway-lambda-function. 
+1) Create a Lambda function called da-training-gateway-lambda-function.
 - Choose the Author from scratch option
-- Choose Python3.7 as the Runtime 
+- Choose Python3.7 as the Runtime
 - Create a proper role.
 2) Edit code inline in order to print “Hi X! Current time is: Z”, being X a random name and Z current time.
 3) Execute lambda function and check results are ok.
